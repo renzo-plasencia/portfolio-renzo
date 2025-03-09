@@ -1,0 +1,23 @@
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 2rem;
+    margin-left: 15vw;
+    align-items: start;
+}
+
+.title-section h1 {
+    color: #00EF7A; 
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-underline {
+    width: 80px;
+    height: 10px;
+    background-color: #00EF7A;
+    margin-top: 5px;
+}

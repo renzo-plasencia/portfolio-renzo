@@ -1,0 +1,87 @@
+@keyframes colorChange {
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+  }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 7rem;
+}
+
+.hero-content {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img{
+    height: 50vh;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* .hero-text {
+    color: red;
+} */
+
+.hero-h1 {
+    font-size: 4rem;
+    font-weight:bolder;
+    color: #fff;
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.hero-h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.highlight {
+    animation: colorChange 9s infinite linear;
+  }
+
+.hero-buttons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
