@@ -1,0 +1,134 @@
+.experience-card{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 60vw;
+    margin-bottom: 2rem;
+}
+
+.experience-left{
+    margin-left: 12px;
+}
+
+.experience-card h1,.experience-card h2{
+    margin: 0;
+}
+
+.year-tag {
+    display: inline-block;
+    background-color: #43604C;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    clip-path: polygon(
+        0% 0%, 
+        85% 0%, 
+        100% 50%, 
+        85% 100%, 
+        0% 100%
+    );
+    width: fit-content;
+}
+
+.experience-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-p{
+    margin-bottom: 1rem;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+  }
+
+.experience-card li::marker {
+    color: white;
+  }
+
+.experience-card li {
+    list-style: disc inside none;
+}
+
+@media (max-width: 1024px) {
+    .separator{
+        height: 40px;
+    }
+
+    .experience-card{
+        width: 72vw;
+        
+    }
+
+    .other-projects a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-projects span{
+        font-size: 1.2rem;
+    }
+
+    .other-projects img{
+        height: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .experience-card{
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 80vw;
+    }
+    
+    .experience-left{
+        margin-left: 0;
+    }
+    
+    .experience-card h1,.experience-card h2{
+        margin: 0;
+    }
+    
+    .year-tag {
+        display: inline-block;
+        background-color: #43604C;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+        clip-path: polygon(
+            0% 0%, 
+            85% 0%, 
+            100% 50%, 
+            85% 100%, 
+            0% 100%
+        );
+        width: fit-content;
+    }
+    
+    .experience-right{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .content-p{
+        margin-bottom: 1rem;
+    }
+    
+    .experience-card ul {
+        list-style-type: disc;
+      }
+    
+    .experience-card li::marker {
+        color: white;
+      }
+    
+    .experience-card li {
+        list-style: disc inside none;
+    }
+}

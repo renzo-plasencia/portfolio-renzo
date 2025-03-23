@@ -1,6 +1,6 @@
 import '../styles/TitleSection.css'
 
-function TitleSection({ title }: { title: string }) {
+function TitleSection({ title }: { title: string}) {
     return (
         <div className='title-section'>
             <h1>{ title }</h1>

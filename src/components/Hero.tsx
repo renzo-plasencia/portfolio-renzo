@@ -8,7 +8,7 @@ import cvIcon from '../assets/cv.svg';
 
 
 const linkedin = [
-    { text: 'Renzo Plasencia', icon: linkedinIcon, url: 'https://linkedin.com/in/renzo-plasencia' },
+    { text: 'Renzo Plasencia', icon: linkedinIcon, url: 'https://www.linkedin.com/in/renzo-plasencia/' },
   ]
 
 const github = [
@@ -16,13 +16,13 @@ const github = [
 ]
 
 const cv = [
-    { text: 'Descargar CV', icon: cvIcon, url: 'https://linkedin.com/in/renzo-plasencia' },
+    { text: 'Descargar CV', icon: cvIcon, url: 'https://drive.google.com/file/d/15Dsf7mzEowt-3D_2daxB_NfsHCf8tUI2/view?usp=sharing' },
 ]
 
 
 function Hero() {
 return (
-    <section className="hero">
+    <section className="hero" id='hero'>
         <div className='hero-content'>
             <div className='hero-text'>
                 <HeroText />

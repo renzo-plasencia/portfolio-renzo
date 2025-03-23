@@ -18,3 +18,19 @@
     height: 2px;
     background-color: #fff;
 }
+
+@media (max-width: 1024px){
+    .footer-section{
+        padding: 4rem 8rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        padding: 5rem 2rem;
+    }
+
+}

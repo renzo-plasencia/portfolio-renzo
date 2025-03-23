@@ -1,0 +1,16 @@
+.markdown-container{
+    padding: 2rem 15rem;
+    line-height: 2rem;
+    font-family: 'Montserrat';
+}
+
+.markdown-container img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .markdown-container{
+        padding: 2rem 2rem;
+    }
+}

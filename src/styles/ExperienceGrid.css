@@ -1,0 +1,17 @@
+.experience-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.experience-grid .other-projects{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .experience-grid{
+        margin-top: 2.5rem;
+    }
+}

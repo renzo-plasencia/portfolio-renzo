@@ -1,31 +1,39 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-//import './index.css'
-import Navbar from './components/Navbar.tsx'
-import './styles/global.css'
-import Hero from './components/Hero.tsx'
-import Section from './components/Section.tsx'
-import Footer from './components/Footer.tsx'
-import SkillGrid from './components/SkillGrid.tsx'
-import ProjectGrid from './components/ProjectGrid.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import App from './App';
+import Home from './pages/Home';
+import Project from './pages/Projects';
+import Experience from './pages/Experience_Page';
+import DashboardVentasPage from './pages/Dashboard_avance_ventas';
+import AutomatizacionMacroVba from './pages/AutomatizacionMacrosVBA';
+import EditorPdf from './pages/EditorPdf';
+import Portfolio from './pages/Portfolio';
+import ScrappingTC from './pages/ScrappingTC';
+import SuperKuromi from './pages/SuperKuromi';
+import EncriptacionPython from './pages/EncriptacionPython';
 
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/projects', element: <Project /> },
+      { path: '/experience', element: <Experience /> },
+      { path: '/projects/dashboard-ventas', element: <DashboardVentasPage /> },
+      { path: '/projects/automatizacion-vba', element: <AutomatizacionMacroVba /> },
+      { path: '/projects/editor-pdf', element: <EditorPdf /> },
+      { path: '/projects/scrapping-tc', element: <ScrappingTC /> },
+      { path: '/projects/encriptacion-python', element: <EncriptacionPython /> },
+      { path: '/projects/super-kuromi', element: <SuperKuromi /> },
+      { path: '/projects/portfolio', element: <Portfolio /> },
+    ]
+  }
+]);
 
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    
-    <Navbar />
-    <Hero />
-    <Section title='Proyectos' />
-    <ProjectGrid />
-
-    <Section title='Experiencia' />
-    {/* Cada card de experiencia */}
-    
-    <Section title='Tecnologías' />
-    <SkillGrid />
-
-    <Footer/>
-   
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

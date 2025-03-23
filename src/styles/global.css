@@ -10,3 +10,11 @@ body {
     color: white;
     font-family: 'Montserrat','Arial', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.separator{
+    height: 80px;
+}

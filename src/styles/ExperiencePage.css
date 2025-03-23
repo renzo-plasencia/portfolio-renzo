@@ -1,0 +1,11 @@
+.experience-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.experience-page .title-section{
+    margin: 0;
+    margin-bottom: 4rem;
+}

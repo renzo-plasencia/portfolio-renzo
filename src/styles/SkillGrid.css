@@ -15,8 +15,22 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0px;
-    justify-items: center;
-    margin-top: 20px; */
+}
+
+@media screen and (max-width: 768px){
+    .skill-grid-container {
+        margin-top: 2rem;
+    }
+    
+    .skill-grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+        margin-top: 2rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
