@@ -121,7 +121,7 @@ padding:0.8rem; border:0; border-radius:10px; background:#2A7AE4; color:#fff; fo
 }
 
 /* PC Cuadrada */
-@media (min-width: 1024px) {
+@media (max-width: 1440px) {
   @keyframes reveal {
     from { width: 0rem; }
     to   { width: 9rem; } 

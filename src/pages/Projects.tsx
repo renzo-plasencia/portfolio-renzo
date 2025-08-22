@@ -6,6 +6,7 @@ import pdf from '../assets/pdf-image.png'
 import tc_image from '../assets/tc-image.png'
 import encrypt_image from '../assets/encrypt-image.png'
 import super_image from '../assets/super-image.png'
+import pa from '../assets/power-apps.png';
 // import porfolio_image from '../assets/portafolio-image.png'
 
 import '../styles/ProjectGrid.css'
@@ -13,6 +14,8 @@ import '../styles/ProjectGrid.css'
 
 function Project() {
   const projects = [
+    {link:'/portfolio-renzo/#/projects/power-apps', img:pa, title:'Desarrollo Ágil de App de Gestión para Interbank' ,content:'Desarrollé en solo 2 meses una aplicación de gestión de información en Power Apps para Interbank, optimizando procesos clave y mejorando la operatividad del área. Este proyecto representó un reto profesional que fortaleció mis habilidades en automatización y diseño de soluciones digitales.',tags:['Power Apps','Power Automate']},
+    
     {link:'/portfolio-renzo/#/projects/dashboard-ventas', img:dashboardVentas, title:'Dashboard Avance en Ventas DPF' ,content:'Se creó un dashboard usando Power Bi buscando conocer el avance en las ventas/colocaciones del producto Depósito a Plazo Fijo. Se muestra indicadores importantes para la gestión e historial de conversiones vs leads repartidos en diferentes cortes de tiempo.',tags:['Power BI','Excel']},
 
     {link:'/portfolio-renzo/#/projects/encriptacion-python', img:encrypt_image, title:'Encriptación de mensajes con Python' ,content:'Basado en la encriptación simétrica de Fernet. Con este desarrollo, tanto Back y Front End, se puede encriptar mensajes con una clave única. Esta luego servirá para poder descifrar el mensaje.',tags:['Python','Flask']},
