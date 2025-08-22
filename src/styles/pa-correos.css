@@ -1,0 +1,134 @@
+/* Tablas */
+.fd-pa-out{
+  width: 100%;
+  display:flex;justify-content: center;margin:0;
+}
+
+.fd-pa-table {
+  width: 40%;
+}
+
+.fd-pa-table th, .fd-pa-table td {
+  width: 10rem;
+  text-align: center;
+}
+
+.fd-pa-table img {
+  max-width: 50%;
+  height: auto;
+}
+
+.fd-pa-button {
+  margin-left:0.5rem;margin-top:1rem; padding:0.8rem; border:0; border-radius:10px; background:#2A7AE4; color:#fff; font-weight:600; cursor:pointer;width: 50%;
+  
+}
+
+/* Outlook Imágenes */
+.badge-container {
+  position: relative;
+  display: inline-block;
+}
+
+.fd-pa-img,.outlook-logo{
+  width: 35% !important;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;   /* ajusta según tamaño */
+  right: 115px; /* ajusta según tamaño */
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+/* Flechas */
+
+.arrow {
+  width: 120px;
+  height: 60px;
+}
+
+.arrow path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+
+  stroke-dasharray: 200;    /* longitud de la línea */
+  stroke-dashoffset: 200;   /* oculta toda la línea */
+  /* animation: drawLine 1.2s ease forwards; */
+}
+
+/* solo se anima cuando se le pone la clase "animate" */
+.arrow.animate path {
+  animation: drawLine 1.2s ease forwards;
+}
+
+.spin {
+  animation: spin 0.5s linear;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;   /* muestra toda la línea */
+  }
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* PC Cuadrada */
+@media (min-width: 1024px) {
+  .badge{
+    top: -5px;   /* ajusta según tamaño */
+    right: 60px; /* ajusta según tamaño */
+  }
+  .badge-container{
+    width: 100px;
+  }
+  .outlook-logo{
+    width: 100% !important;
+  }
+  .fd-pa-table{
+    width: 600px;
+  }
+
+  .fd-pa-button{
+    width: 150px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .badge{
+    font-size: 0;
+    width: 0%;
+    height: 0%;
+  }
+  .badge-container{
+    width: 50px;
+
+  }
+  .outlook-logo{
+    width: 100% !important;
+  }
+
+  .fd-pa-button{
+    width: 80px;
+  }
+}

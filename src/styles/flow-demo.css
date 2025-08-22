@@ -1,0 +1,89 @@
+/* Prefijo fd- para no chocar con tu Markdown.css */
+.fd-wrap{
+  display:grid;
+  grid-template-columns:0.5fr 1.5fr 1fr;
+  gap:20px; align-items:center;
+  padding:3rem;
+  border-radius: 2rem;
+  background-color: rgba(77, 255, 166, 0.1);
+}
+
+.fd-col{
+    min-height:120px;
+    display:grid;
+    align-content:start;
+    justify-content: center;
+    gap:12px
+}
+
+/* Inputs */
+.fd-inputs label span{display:block; font-size:1rem; font-weight:700; margin-bottom:6px}
+.fd-inputs input{width:100%; padding:0.5rem 0 0.5rem 1rem; border:1px solid #f7f6f6; border-radius:10px; background:#eee}
+.fd-inputs button{margin-left:0.5rem;margin-top:1rem; padding:0.8rem; border:0; border-radius:10px; background:#2A7AE4; color:#fff; font-weight:600; cursor:pointer;width: 100%;}
+.fd-inputs button:disabled{opacity:.6; cursor:default}
+
+/* Centro: icono + flechas */
+.fd-center{position:relative; display:flex; place-items:center; flex-direction: row-reverse;width: 400px;}
+.fd-icon{
+  width: 30% !important;
+}
+.fd-center img{
+    width: 20% !important;
+}
+@keyframes fd-spin{to{transform:rotate(360deg)}}
+.fd-run .fd-icon{animation:fd-spin 1s linear infinite}
+
+.fd-arrows{position:relative; inset:0; pointer-events:none; padding: 0;}
+.fd-arrow{
+  fill:none; stroke:#ffffff; stroke-width:2;
+  stroke-dasharray:260; stroke-dashoffset:260;
+  marker-end:url(#fd-head);
+}
+@keyframes fd-draw{to{stroke-dashoffset:0}}
+.fd-run .fd-a1{animation:fd-draw .6s ease-in-out forwards .1s}
+.fd-run .fd-a2{animation:fd-draw .6s ease-in-out forwards .8s}
+.fd-run .fd-a3{animation:fd-draw .6s ease-in-out forwards 1.5s}
+
+/* Tabla/placeholder */
+.fd-out{display:flex;justify-content: center;margin:0;width: 350px;}
+.fd-table{width:100%; border-collapse:collapse; border-radius:12px; overflow:hidden; box-shadow:0 6px 14px rgba(0,0,0,.06)}
+.fd-table td{
+    color:black;
+}
+.fd-table th,.fd-table td{padding:12px 14px; border-bottom:1px solid #eee; background:#fff; text-align:center}
+
+.fd-table thead th{background:#009528}
+.fd-placeholder{height:200px; border:1px dashed #cfcfcf; border-radius:12px; display:grid; place-items:center; color:#777}
+
+/* PC Cuadrada */
+@media (min-width: 1024px) {
+  .fd-center {
+    width: 95%;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .fd-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .fd-col{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .fd-arrows{
+    width: 0%;
+  }
+
+  .fd-table th,.fd-table td{padding:2px 14px; border-bottom:1px solid #eee; background:#fff; text-align:center}
+
+  .fd-table{
+    width: 10%;
+    font-size: 12px ;
+  }
+
+}

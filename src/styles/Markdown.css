@@ -14,3 +14,11 @@
         padding: 2rem 2rem;
     }
 }
+
+.markdown-container blockquote {
+  border-left: 4px solid #ccc;   /* la barra lateral */
+  padding-left: 1rem;            /* espacio entre la barra y el texto */
+  margin: 1rem 0;                /* separación arriba/abajo */
+  color: #ffc936;                   /* color de texto más suave */
+  background-color: rgba(252, 255, 55, 0.1);
+}

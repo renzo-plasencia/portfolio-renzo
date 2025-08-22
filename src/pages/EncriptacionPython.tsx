@@ -5,9 +5,9 @@ import '../styles/Markdown.css';
 const markdownContent = `
 # APP para encriptar mensajes en Python 🐍
 
-| It's a web app that allows you to encrypt and decrypt using a Fernet encryption method.
+> It's a web app that allows you to encrypt and decrypt using a Fernet encryption method.
 
-| Una aplicación web que te permite encriptar y desencriptar usando el método de encriptación de Fernet.
+> Una aplicación web que te permite encriptar y desencriptar usando el método de encriptación de Fernet.
 
 ## What's Fernet encrypted? 🔏
 Fernet (symmetric encryption) guarantees that a message encrypted using it cannot be manipulated or read without the key. Fernet is an implementation of symmetric (also known as “secret key”) authenticated cryptography. Fernet also has support for implementing key rotation via MultiFernet.

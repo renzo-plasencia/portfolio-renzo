@@ -12,6 +12,7 @@ import Portfolio from './pages/Portfolio';
 import ScrappingTC from './pages/ScrappingTC';
 import SuperKuromi from './pages/SuperKuromi';
 import EncriptacionPython from './pages/EncriptacionPython';
+import PowerApps from './pages/PowerApps';
 
 const router = createHashRouter([
   {
@@ -28,6 +29,7 @@ const router = createHashRouter([
       { path: '/projects/encriptacion-python', element: <EncriptacionPython /> },
       { path: '/projects/super-kuromi', element: <SuperKuromi /> },
       { path: '/projects/portfolio', element: <Portfolio /> },
+      { path: '/projects/power-apps', element: <PowerApps /> },
     ]
   }
 ]);
