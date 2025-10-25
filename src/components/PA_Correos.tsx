@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../styles/pa-correos.css";
+import PAutomate from '../assets/microsoft-power-apps-2020.png'
+import outlookLogo from '../assets/ms-outlook.png';
 
 export default function PACorreos() {
   const [animateArrows, setAnimateArrows] = useState(false);
@@ -35,14 +37,14 @@ export default function PACorreos() {
                 </td>
                 <td>
                   <div className="badge-container">
-                    <img className="outlook-logo" src="src/assets/ms-outlook.png" alt="Outlook Logo" />
+                    <img className="outlook-logo" src={outlookLogo} alt="Outlook Logo" />
                     <span className="badge">1</span>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <img className={`${isSpinning ? "spin" : ""}`} src="src/assets/microsoft-power-apps-2020.png" alt="Power Apps Logo" />
+                  <img className={`${isSpinning ? "spin" : ""}`} src={PAutomate} alt="Power Apps Logo" />
                 </td>
                 <td>
                   <svg className={`arrow arrow1 ${animateArrows ? "animate" : ""}`} viewBox="0 0 120 20">
@@ -56,7 +58,7 @@ export default function PACorreos() {
                 </td>
                 <td>
                   <div className="badge-container">
-                    <img className="outlook-logo" src="src/assets/ms-outlook.png" alt="Outlook Logo" />
+                    <img className="outlook-logo" src={outlookLogo} alt="Outlook Logo" />
                     <span className="badge">1</span>
                   </div>
                 </td>
@@ -72,7 +74,7 @@ export default function PACorreos() {
                 </td>
                 <td>
                   <div className="badge-container">
-                  <img className="outlook-logo" src="src/assets/ms-outlook.png" alt="Outlook Logo" />
+                  <img className="outlook-logo" src={outlookLogo} alt="Outlook Logo" />
                     <span className="badge">1</span>
                   </div>
                 </td>
