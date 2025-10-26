@@ -18,7 +18,7 @@ function Navbar() {
     <>
     <nav className="navbar" id='navbar'>
         <ul className="nav-links desktop-only">
-          <li><a href="/portfolio-renzo/#/">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li><button onClick={() => scrollToSection('Project')}>Proyectos</button></li>
           <li><button onClick={() => scrollToSection('Experiencia')}>Experiencia</button></li>
           <li><button onClick={() => scrollToSection('Tecnologias')}>Tecnologías</button></li>
@@ -33,7 +33,7 @@ function Navbar() {
         
         <div className="navbar mobile-only mobile-header">
           <div className="nav-inicio">
-            <a href="/portfolio-renzo/#/">Inicio</a>
+            <a href="/">Inicio</a>
           </div>
           <div className="menu-icon" onClick={() => setIsMobileMenuOpen(true)}>
             <img src={menuIcon} alt="menu" id="sandwich" />
